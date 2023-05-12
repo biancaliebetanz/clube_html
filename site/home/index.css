@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Regular';
+    src: url(../../src/fonts/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: 'Bold';
+    src: url(../../src/fonts/Inter-Bold.ttf);
+}
+@font-face {
+    font-family: 'Black';
+    src: url(../../src/fonts/Inter-Black.ttf);
+}
+
+.liebetanz {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(255, 238, 238);
+}
+
+.imagem {
+    border-radius: 1em;
+    width: 420px;
+    height: 290px;
+    margin: 10px;
+}
+
+.titulo {
+    font-family: 'Black';
+    font-size: 22px;
+    color: #ff0000;
+    text-transform: uppercase;
+}
+
+.subtitulo {
+    font-family: 'Bold';
+    font-size: 14px;
+    color: #ff7300;
+    text-transform: capitalize;
+}
+
+.texto {
+    font-family: 'Regular';
+    font-size: 12px;
+}
