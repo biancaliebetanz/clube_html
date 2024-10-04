@@ -16,11 +16,13 @@
 }
 
 .main {
-    height: 200vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     background-image: url(https://plus.unsplash.com/premium_photo-1703417464507-1766a5e905e2?q=80&w=2045&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,26 +32,31 @@
     align-items: center;
 }
 
+.header div {
+    height: 90%;
+}
+
 .nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 2em;
     align-items: center;
     text-align: center;
-    width: 100vw;
-    position: fixed;
-    background-color: hsl(0, 0%, 96%);
+    height: 10%;
+    width: 100%;
+    background-color: transparent;
 }
 
 .nav a {
     font-size: 1em;
-    font-family: 'Regular';
-    color:rgb(217, 35, 35);
+    font-family: 'Bold';
+    color:rgb(255, 250, 250);
     text-decoration: none;
 }
 
 .kittens {
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 200px;
     grid-gap: 10px;
