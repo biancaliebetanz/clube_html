@@ -110,6 +110,12 @@ body {
     .flex-column h1 {
         font-size: 1.8em;
     }
+.container {
+  flex-direction: column.
+}
+.container h2{
+font-size: 1em;
+}
 }
 
 .container {
