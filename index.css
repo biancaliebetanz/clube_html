@@ -29,22 +29,25 @@ body {
     background-attachment: scroll;
     background-size: cover;
     backdrop-filter: blur(5px);
+    height: fit-content;
 }
 
 * {
-    margin: 0px
+    margin: 0px;
+    scroll-behavior: smooth;
+    scroll-snap-stop: always;
 }
 
 .main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100dvh;
+    height: fit-content;
     width: 100%;
 }
 
 .header {
-    height: 95vh;
+    height: 100dvh;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -100,23 +103,6 @@ body {
     text-decoration: none;
 }
 
-
-@media (max-width: 900px) {
-    .flex-column {
-        justify-content: flex-end;
-        align-items: center;
-    }
-    .flex-column h1 {
-        font-size: 1.8em;
-    }
-.container {
-  flex-direction: column.
-}
-.container h2{
-font-size: 1em;
-}
-}
-
 .container {
     width: 80%;
     padding: 1rem 10%;
@@ -131,28 +117,23 @@ font-size: 1em;
     display: flex;
     align-items: center;
     width: 1fr;
-    min-height: 100dvh;
+    height: 100dvh;
     gap: 2em;
-    background: linear-gradient(45deg, #141b15 20%, #3b4839 40%, #f0f0f0 80%, #fff 100%);
+    background-color: #96724b;
 }
 
 .container h2 {
-    animation: shine 10s linear infinite;
     font-family: "Tangerine" cursive;
     font-weight: 200;
     font-size: 3rem;
-    background-image: linear-gradient(45deg, #63856d 0%, #585858 40%, #3fad7a 100%);
-    background-size: 200% auto;
-    background-clip: text;
+    color: #fff;
     text-align: center;
-    color: transparent;
     width: 100%;
 }
 
 .slider-wrapper {
     position: relative;
     max-width: 80%;
-    height: 60%;
 }
 
 .slider {
@@ -194,4 +175,32 @@ font-size: 1em;
 
 .slider-nav a:hover {
     opacity: 1;
+}
+
+.footer {
+    height: 20dvh;
+    background-color: #fff;
+}
+
+.footer p {
+    color:#3fad7a
+}
+
+@media (max-width: 900px) {
+    .flex-column {
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .flex-column h1 {
+        font-size: 1.8em;
+    }
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        height: 60dvh;
+        background: linear-gradient(210deg, #fff 20%, #f0f0f0 30%, #3b4839 80%, #141b15 100%);
+    }
+    .container h2{
+        font-size: 1em;
+    }
 }
