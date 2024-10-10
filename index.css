@@ -72,7 +72,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 10px 5%;
-    background-image: url(./src/images/green-back-unsplash.jpg);
+    background-image: url(./src/images/zoltan-tasi-2pZ4McZAH4M-unsplash.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -145,7 +145,7 @@ body {
     font-family: "Tangerine" cursive;
     font-weight: 200;
     font-size: 3rem;
-    color: #3b3b3b;
+    color: #da722d;
     text-align: center;
     width: 100%;
 }
