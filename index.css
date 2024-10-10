@@ -32,8 +32,7 @@ body {
 }
 
 * {
-    margin: 0px;
-    scroll-snap-stop: always !important;
+    margin: 0px
 }
 
 .main {
@@ -45,7 +44,7 @@ body {
 }
 
 .header {
-    height: 100vh;
+    height: 95vh;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -110,6 +109,12 @@ body {
     .flex-column h1 {
         font-size: 1.8em;
     }
+.container {
+  flex-direction: column.
+}
+.container h2{
+font-size: 1em;
+}
 }
 
 .container {
@@ -155,8 +160,8 @@ body {
     aspect-ratio: 16/9;
     overflow-x: hidden;
     scroll-snap-type: x mandatory;
-    scroll-snap-stop: always;
     scroll-behavior: smooth;
+    scroll-snap-stop: always;
     box-shadow: 0 1.5rem 3rem -0.75rem hsl(0, 0% 0%, 0.25);
     border-radius: 0.5rem;
     object-position: 50% 50%;
