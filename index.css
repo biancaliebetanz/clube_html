@@ -25,17 +25,36 @@
 
 
 body {
-    background-image: url(./src/images/stars-black-bgd.jpg);
+    background-color: rgb(255, 255, 255);
     background-attachment: scroll;
     background-size: cover;
     backdrop-filter: blur(5px);
     height: fit-content;
+    image-rendering: optimizeQuality;
 }
 
 * {
     margin: 0px;
     scroll-behavior: smooth;
     scroll-snap-stop: always;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
 }
 
 .main {
@@ -59,7 +78,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.flex-column {
+.title {
     height: 100%;
     width: 100%;
     display: flex;
@@ -69,14 +88,14 @@ body {
     align-items: flex-start;
 }
 
-.flex-column h1 {
+.title h1 {
     color: #fff;
-    font-family: 'Rye-Regular';
-    font-weight: 400;
-    font-size: 2.5em;
+    font-family: 'Tangerine' cursive;
+    font-weight: 100;
+    font-size: 3em;
 }
 
-.flex-column p {
+.title p {
     color: #fff;
     font-family: 'Inter-Regular';
     font-weight: 400;
@@ -126,7 +145,7 @@ body {
     font-family: "Tangerine" cursive;
     font-weight: 200;
     font-size: 3rem;
-    color: #fff;
+    color: #3b3b3b;
     text-align: center;
     width: 100%;
 }
@@ -177,26 +196,62 @@ body {
     opacity: 1;
 }
 
-.curiosities div {
-    display: flex;
-    background: transparent;
-    align-items: center;
-    justify-content: center;
+.curiosities {
+    background-color: hwb(145 23% 52%);
+    width: 100%;
+    aspect-ratio: 4/3;
+    gap: 2em;
     height: 100dvh;
 }
 
-.curiosity {
-    font-family: "Tangerine";
+.curiosities h2 {
+    font-family: "Inter-Light";
+    font-weight: 200;
     color: #fff;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.container-flashcard {
+    gap: 20px;
+}
+
+.flashcard {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    background-color: #fff;
+    padding-bottom: 10px;
+    border: 1px solid #3b3b3b;
+}
+
+.curiosity {
+    font-family: "Tangerine" cursive;
+    font-weight: 200;
+    text-align: center;
+    font-size: 2em;
+    color: #000;
+}
+
+.img-curiosity {
+    width: 100%;
+    height:auto;
+}
+
+.information {
+    height: 100dvh;
 }
 
 .footer {
     height: 20dvh;
-    background: transparent;
+    background-color: #3fad7a;
 }
 
 .footer p {
-    color:#3fad7a
+    color:#ffffff
 }
 
 @media (max-width: 900px) {
@@ -210,10 +265,6 @@ body {
     .curiosities div {
         font-size: 1em;
         height: 60dvh;
-    }
-    .img-curiosity {
-        aspect-ratio: 16/9;
-        width: 50%;
     }
     .container {
         flex-direction: column;
