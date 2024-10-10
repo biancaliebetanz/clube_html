@@ -119,7 +119,7 @@ body {
     width: 1fr;
     height: 100dvh;
     gap: 2em;
-    background-color: #96724b;
+    background: transparent;
 }
 
 .container h2 {
@@ -177,9 +177,22 @@ body {
     opacity: 1;
 }
 
+.curiosities div {
+    display: flex;
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+}
+
+.curiosity {
+    font-family: "Tangerine";
+    color: #fff;
+}
+
 .footer {
     height: 20dvh;
-    background-color: #fff;
+    background: transparent;
 }
 
 .footer p {
@@ -194,11 +207,19 @@ body {
     .flex-column h1 {
         font-size: 1.8em;
     }
+    .curiosities div {
+        font-size: 1em;
+        height: 60dvh;
+    }
+    .img-curiosity {
+        aspect-ratio: 16/9;
+        width: 50%;
+    }
     .container {
         flex-direction: column;
         justify-content: center;
         height: 60dvh;
-        background: linear-gradient(210deg, #fff 20%, #f0f0f0 30%, #3b4839 80%, #141b15 100%);
+        background: transparent;
     }
     .container h2{
         font-size: 1em;
